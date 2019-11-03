@@ -66,10 +66,10 @@ public class VarastoTest {
     }
     
     @Test
-    public void testiFeilaa() {
+    public void ottaminenEiYlitäKapasiteettia() {
         varasto.otaVarastosta(11);
         
-        assertEquals(1, varasto.paljonkoMahtuu(), vertailuTarkkuus);
+        assertEquals(10, varasto.paljonkoMahtuu(), vertailuTarkkuus);
     }
 
 }
